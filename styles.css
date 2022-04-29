@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Khand:wght@600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+/*Comienzo del Header*/
+header{
+    height: 75px;
+    width: 100%;
+    background-color: rgb(116, 1, 182);
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+    display: grid;
+    grid-template-columns: calc(100%-270px);
+    grid-template-rows: 75px;
+}
+header a{
+    color: black;
+    text-decoration: none;
+}
+header a:hover{
+    font-size: 36px;
+    text-shadow: 4px 4px 1px rgba(0, 0, 0, 0.219);
+}
+.logo{
+    float: left;
+    font-family: 'Khand', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 35px;
+    grid-column: 1/2;
+}
+.logo span{
+    color: white;
+}
+.logo i{
+    margin-left: 20px;
+    color: rgb(42, 255, 38);
+    font-size: 50px;
+    padding-top: 5px;
+    text-shadow: 3px 3px 1px rgb(111, 150, 110);
+}
+.nav{
+    grid-column: 3/4;
+}
+.headerlinks{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+.nav ul{
+    list-style: none;
+    padding-top: 20px;
+}
+.nav ul li{
+    text-align: center;
+}
+.nav a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Khand', sans-serif;
+    letter-spacing: 2px;
+    position: static;
+}
+.nav a:hover{
+    color: rgb(210, 161, 255);
+    font-size: 22px;
+    margin-left: 7px;
+}
+/*Fin del Header*/
+/*Comienzo del Main*/
+main{
+    display: flex;
+    float: right;
+    height: calc(100vh - 75px);
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.904);
+    background-blend-mode: darken;
+    background-size: cover;
+}
+.main{
+    background-image: url(/multimedia/fond22.jpg);
+    display: block;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh - 75px);
+    margin: 0px;
+}
+.main:before{
+    margin-top: 94.7vh;
+    content: "";
+    width: 100%;
+    height: 55px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(rgba(255, 255, 255, 0) 10%,rgb(12, 12, 12));
+}
+.call{
+    width: 100%;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: grid;
+    grid-template-rows: 10% 60% 20%;
+    grid-template-columns: 15% 70% 15%;
+}
+.call-mod{
+    width: 100%;
+    font-family: 'Khand', sans-serif;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+.call-mod h1 span{
+    color: rgba(42, 255, 38, 0.582);
+    font-style: italic;
+}
+.call h1{
+    color: rgba(42, 255, 38, 0.582);
+    font-family: 'Khand', sans-serif;
+    letter-spacing: 5px;
+    font-style: italic;
+    margin-bottom: 20px;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.call h3{
+    font-size: 160px;
+    padding-top: 12%;
+    padding-bottom: 150px;
+    font-family: 'Khand', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.call p{
+    width: 30%;
+    grid-row: 3/4;
+    grid-column: 2/3;
+    margin-left: 35%;
+}
+.call a{
+    color: white;
+    text-decoration: none;
+    background-color: rgb(116, 1, 182);
+    padding: 8px 14px;
+    border-radius: 5px;
+    border: 3px solid white;
+    grid-column: 2/3;
+    grid-row: 4/5;
+    width: 10%;
+    margin-left: 45%;
+    height: 45px;
+}
+.call a:hover{
+    background-color: rgb(210, 161, 255);
+    border: 4px solid rgb(42, 255, 38);
+}
+h2{
+    text-align: center;
+    color: rgba(42, 255, 38, 0);
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 28px;
+    background-color: rgba(12, 12, 12, 0);
+    padding-bottom: 10px;
+}
+div .mainmoding{
+    display: grid;
+    width: 100%;
+}
+.infomain{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSklPDX7URoJ5kdkvFOUVpVncW0dtorY207Ew&usqp=CAU);
+}
+.infomain h1{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 110px;
+    color: rgba(240, 248, 255, 0.507);
+
+}
+/*Fin del Main*/
+/*Inicio de Catalogo*/
+main h4{
+        grid-column: 2/3;
+        grid-row: 1/2;
+        color: #ffff;
+        font-family: 'Khand', sans-serif;
+        font-style: italic;
+        font-size: 50px;
+        color: rgb(42, 255, 38);
+        display: flex;
+        text-align: center;
+        margin: 100px;
+}
+.cata{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.cata a{
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.produtcosimg{
+    margin: 5px;
+    padding: 6px;
+    width: 175px;
+    height: 250px;
+}
+.produtcosimg:hover{
+    width: 165px;
+    height: 240px;
+    margin: 10px;
+}
+.productosDivAp{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 5px;
+    margin: 5px;
+    padding: 5px;
+    text-decoration: none;
+}
+/*Fin de Catalogo*/
+/*Inicio de Registro*/
+.registro{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.registro h2{
+    color: white;
+    text-decoration: none;
+    text-underline-position: none;
+    font-family:  'Khand', sans-serif;
+    font-style: italic;
+    font-size: 60px;
+}
+form{
+    background-color: rgb(116, 1, 182);
+    width: 300px;
+    border-radius: 20px;
+    border: 3px rgb(42, 255, 38) solid;
+    margin-left: 42.5%;
+}
+/*Fin de registro*/
+/*Inicio de Galeria*/
+div .contenedor{
+    display: grid;
+    border: 3px solid white;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.galeria{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: baseline;;
+}
+.galeria img{
+    height: 300px;
+    width: 300px;
+}
+
+/*Fin de Galeria*/
+.title1{
+    background-color: rgb(12, 12, 12);
+}
+.section{
+    height: 500px;
+    width: 100%;
+    background-color: rgb(12, 12, 12);
+}
+footer{
+    height: 60px;
+    width: 100%;
+    background-color: rgb(116, 1, 182);
+    text-align: center;
+}
+.mainsection1 img{
+    height: 400px;
+    padding-left: 10%;
+    padding-top: 5%;
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+.mainsection1{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 30% 70%;
+}
+.mainsection1 h4{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    color: #ffff;
+    font-family: 'Khand', sans-serif;
+    font-style: italic;
+    font-size: 50px;
+    color: rgb(42, 255, 38);
+}
+.mainsection1 p{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    color: #ffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+.call-mod1{
+    background-color: rgb(12, 12, 12);
+}
+.call-mod article h2{
+    color: rgb(42, 255, 38) ;
+    
+}
+.call-mod article p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    font-size: 30px;
+}
+.articlemodding{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 80%;
+}
+.articlemodding img{
+    height: 350px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin-left: 80px;
+    
+}
+.articlemodding p{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding-right: 15%;
+    height: 5px;
+}
+footer{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+}
+footer p{
+    float: left;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 10px;
+    color: rgba(255, 255, 255, 0.801);
+    font-size: small;
+    margin-left: 20px;
+    margin-top: 10px;
+    text-align: start;
+}
+.footermodding{
+    background-color: rgb(116, 1, 182) ;
+}
+footer i{
+    font-size: 30px;
+    color: rgb(42, 255, 38);
+    padding-bottom: 10px;
+    letter-spacing: 20px;
+    padding-top: 10px;
+}
+footer a{
+    float: right;
+}
+footer div{
+    padding-right: 60px;
+}
+.subir{
+    height: 40px;
+    width: 40px;
+    background-color: rgb(116, 1, 182);
+    border: 5px solid white;
+    color: white;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0);
+}
+.subir:hover{
+    background-color: rgb(210, 161, 255);
+    border: 5px solid rgb(42, 255, 38);
+    color: rgb(37, 12, 61);
+    transform: scale(1.2);
+}
